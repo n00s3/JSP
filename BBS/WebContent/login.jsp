@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">소개</a>
+                        <a class="nav-link" href="index.jsp">소개</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="instructor.html">강사진</a>
