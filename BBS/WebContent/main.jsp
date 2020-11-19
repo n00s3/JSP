@@ -9,6 +9,13 @@
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
+	<%
+		String userID = null;
+		if(session.getAttribute("userID") != null) {
+			userID = (String) session.getAttribute("userID");
+		}
+	 %>
+
 <style type="text/css">
         .title{
             color:#007bff;
@@ -71,36 +78,41 @@
                     <button class="btn btn-success" type="submit">찾기</button>
                 </form>
                 <!--Login/Register-->
-                <ul class="navbar-nav ml-auto">
+                <%
+                	if(userID == null) {
+                		 
+                %>
+                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                             접속하기
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item active" href="login.jsp">로그인</a>
+                            <a class="dropdown-item" href="login.jsp">로그인</a>
                             <a class="dropdown-item" href="join.jsp">회원가입</a>
                         </div>
                     </li>
                 </ul>
+                <%
+                	} else {
+                %>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            회원관리
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="logoutAction.jsp">로그아웃</a>
+                        </div>
+                    </li>
+                </ul>
+				<%
+                	}
+				%>
             </div>
         </nav>
 		<br>
-		<div class="container">
-			<div class="col-lg-4"></div>
-			<div class="clo-lg-4">
-				<div class="jumbotron" style="padding-top: 20px;">
-					<form method="post" action="loginAction.jsp">
-						<h3 style="text-align: center;">로그인 화면</h3>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
-						</div>
-						<input type="submit" class="btn btn-primary form-control" value="로그인">
-					</form>
-			</div>
-		</div>
+
 
         <!--footer-->
         <style type="text/css">

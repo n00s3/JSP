@@ -77,8 +77,8 @@
                             접속하기
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="loginForm.html">로그인</a>
-                            <a class="dropdown-item" href="registerForm.html">회원가입</a>
+                            <a class="dropdown-item" href="login.jsp">로그인</a>
+                            <a class="dropdown-item active" href="join.jsp">회원가입</a>
                         </div>
                     </li>
                 </ul>
