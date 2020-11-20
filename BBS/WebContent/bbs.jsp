@@ -67,9 +67,10 @@
                             <a class="dropdown-item" href="lecture.html?lectureName=C">C/C++</a>
                             <a class="dropdown-item" href="lecture.html?lectureName=Java">Java</a>
                             <a class="dropdown-item" href="lecture.html?lectureName=Python">Python</a>
+
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="bbs.jsp">게시판</a>
                     </li>
                 </ul>
@@ -113,6 +114,34 @@
 				%>
             </div>
         </nav>
+        <br>
+        <div class="container">
+        	<div class="row">
+        		<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+        			<thead>
+        				<tr>
+        					<th style="background-color: #eeeeee text-align: center;">번호</th>
+        					<th style="background-color: #eeeeee text-align: center;">제목</th>
+        					<th style="background-color: #eeeeee text-align: center;">작성자</th>
+        					<th style="background-color: #eeeeee text-align: center;">작성일</th> 
+        				</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td>1</td>
+        					<td>안녕하세요.</td>
+        					<td>성준혁</td>
+        					<td>2020-11-04</td>
+        				</tr>
+        			</tbody>
+        		</table>
+        		<a href="write.jsp" class="btn btn-primary ml-auto">글쓰기</a>
+        	</div>
+        </div>
+        
+        
+        
+        
 		<br>
 
 
