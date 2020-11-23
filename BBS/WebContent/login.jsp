@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
+
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
@@ -62,6 +64,9 @@
                             <a class="dropdown-item" href="lecture.html?lectureName=Python">Python</a>
 
                         </div>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="bbs.jsp">게시판</a>
                     </li>
                 </ul>
                 <!--Search form-->

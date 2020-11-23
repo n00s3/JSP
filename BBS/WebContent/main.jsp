@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
@@ -114,6 +115,43 @@
             </div>
         </nav>
 		<br>
+		<div class="container">
+			<div class="jumbotron">
+				<div class="container">
+					<h1>웹 사이트 소개</h1>
+					<p>
+						부트스트랩과 JSP기능을 이용한 웹 사이트 입니다.
+					</p>
+					<p><a class="btn btn-primary btn-pull" href='#' role="button">자세히 알아보기</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="images/img1.png" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="images/img2.png" class="d-block w-100" alt="...">
+			    </div>
+   			    <div class="carousel-item">
+			      <img src="images/img3.png" class="d-block w-100" alt="...">
+			    </div>
+   			    <div class="carousel-item">
+			      <img src="images/img4.jpg" class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
 
 
         <!--footer-->
